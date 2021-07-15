@@ -1,0 +1,55 @@
+.sky{
+    width:100vw;
+    height: 500px;
+    background-color: skyblue;
+    margin-top: 100px;
+
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: yellow;
+    animation: sunshine 5s ease-in 0.5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+
+}
+
+@keyframes sunshine{
+    0%{
+        top: 0;
+        left: 0;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+    25%{
+        top: 400px;
+        left: 25%;
+        background-color: tomato;
+        transform: scale(0.7);
+    }
+
+    50%{
+        top: 0;
+        left: 50%;
+        background-color: yellow;
+        transform: scale(1);
+    }
+
+    75%{
+        top: 400px;
+        left: 75%;
+        background-color: tomato;
+        transform: scale(0.7);
+    }
+
+    100%{
+        top: 0;
+        left: 100%;
+        background-color: yellow;
+        transform: scale(1);
+    }
+}
